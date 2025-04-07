@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafikon</title>
+    <link rel="stylesheet" href="style_grafikon.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="images.html">Fotografije</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="chart-section">
+            <h1>Stupčasti Grafikon (Bar Chart)</h1>
+            <div class="bar-chart">
+                <div class="bar" style="height: 33%;" data-info="Industrija"></div>
+                <div class="bar" style="height: 67%;" data-info="Kućanstva"></div>
+                <div class="bar" style="height: 50%;" data-info="Transport"></div>
+                <div class="bar" style="height: 100%;" data-info="Zdravstvo"></div>
+                <div class="bar" style="height: 83%;" data-info="Obrazovanje"></div>
+            </div>
+
+            <h2>Kružno Grafikon (Pie Chart)</h2>
+            <div class="pie-chart">
+                <div class="pie-segment" style="transform: rotate(0deg); background-color: #3498db;" data-info="Industrija"></div>
+                <div class="pie-segment" style="transform: rotate(90deg); background-color: #2ecc71;" data-info="Kućanstva"></div>
+                <div class="pie-segment" style="transform: rotate(180deg); background-color: #f1c40f;" data-info="Transport"></div>
+                <div class="pie-segment" style="transform: rotate(270deg); background-color: #e74c3c;" data-info="Zdravstvo"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Moja Web Stranica</p>
+    </footer>
+</body>
+</html>
