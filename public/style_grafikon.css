@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #19005f;
     color: white;
     text-align: center;
     padding: 20px;
@@ -28,7 +28,7 @@ header h1 {
 
 /* Navigation */
 nav {
-    background-color: #444;
+    background-color: #230181;
     padding: 15px;
 }
 
@@ -152,7 +152,7 @@ nav ul li a:hover {
 
   footer {
     text-align: center;
-    background-color: #333;
+    background-color: #19005f;
     color: white;
     padding: 15px;
     position: relative;
