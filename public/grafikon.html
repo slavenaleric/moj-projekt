@@ -6,39 +6,57 @@
     <title>Grafikon</title>
     <link rel="stylesheet" href="style_grafikon.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Početna</a></li>
-                <li><a href="images.html">Fotografije</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1>Galerija</h1>
+</header>
+
+<nav aria-labelledby="primarna-navigacija">
+    <h2 id="primarna-navigacija"></h2>
+    <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="grafikon.html">Grafikon</a></li>
+        
+    </ul>
+</nav>
 
     <main>
-        <section class="chart-section">
-            <h1>Stupčasti Grafikon (Bar Chart)</h1>
-            <div class="bar-chart">
-                <div class="bar" style="height: 33%;" data-info="Industrija"></div>
-                <div class="bar" style="height: 67%;" data-info="Kućanstva"></div>
-                <div class="bar" style="height: 50%;" data-info="Transport"></div>
-                <div class="bar" style="height: 100%;" data-info="Zdravstvo"></div>
-                <div class="bar" style="height: 83%;" data-info="Obrazovanje"></div>
-            </div>
-
-            <h2>Kružno Grafikon (Pie Chart)</h2>
-            <div class="pie-chart">
-                <div class="pie-segment" style="transform: rotate(0deg); background-color: #3498db;" data-info="Industrija"></div>
-                <div class="pie-segment" style="transform: rotate(90deg); background-color: #2ecc71;" data-info="Kućanstva"></div>
-                <div class="pie-segment" style="transform: rotate(180deg); background-color: #f1c40f;" data-info="Transport"></div>
-                <div class="pie-segment" style="transform: rotate(270deg); background-color: #e74c3c;" data-info="Zdravstvo"></div>
-            </div>
-        </section>
+        <h1>Stupčasti grafikon (Bar Chart)</h1>
+        <div class="bar-chart-container">
+          <div class="bar-chart">
+            <div class="bar" style="--value: 80%" title="80%"></div>
+            <div class="bar" style="--value: 60%" title="60%"></div>
+            <div class="bar" style="--value: 40%" title="40%"></div>
+            <div class="bar" style="--value: 90%" title="90%"></div>
+            <div class="bar" style="--value: 70%" title="70%"></div>
+          </div>
+          <div class="bar-legend">
+            <ul>
+              <li><span class="color-box" style="background-color: #4a90e2;"></span> Kategorija A</li>
+              <li><span class="color-box" style="background-color: #4a90e2;"></span> Kategorija B</li>
+              <li><span class="color-box" style="background-color: #4a90e2;"></span> Kategorija C</li>
+              <li><span class="color-box" style="background-color: #4a90e2;"></span> Kategorija D</li>
+              <li><span class="color-box" style="background-color: #4a90e2;"></span> Kategorija E</li>
+            </ul>
+          </div>
+        </div>
+      
+        <h1>Kružni grafikon (Pie Chart)</h1>
+        <div class="pie-chart-container">
+          <div class="pie-chart">
+            <div class="center-circle"></div>
+          </div>
+          <div class="pie-legend">
+            <ul>
+              <li><span class="color-box" style="background-color: #f44336;"></span> Crveno – 40%</li>
+              <li><span class="color-box" style="background-color: #2196f3;"></span> Plavo – 30%</li>
+              <li><span class="color-box" style="background-color: #ffeb3b;"></span> Žuto – 30%</li>
+            </ul>
+          </div>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Moja Web Stranica</p>
+        <p>&copy; Slaven Alerić</p>
     </footer>
 </body>
 </html>

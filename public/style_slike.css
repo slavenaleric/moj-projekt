@@ -1,29 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
-nav {
-    background-color: #444;
-    padding: 15px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ff6347; /* Tomato color */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -32,12 +12,46 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-weight: 100;
-  font-size: 40px;
+/* Header */
+header {
+  background-color: #333;
+  color: white;
   text-align: center;
-  margin-top: 30px;
+  padding: 20px;
 }
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+  background-color: #444;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6347; /* Tomato color */
+}
+
 
 .container {
   width: 90%;
@@ -110,12 +124,10 @@ a.image-popup-vertical-fit {
     border-radius: 10px;
 }
 
-/* Kada klikneš na sliku, aktivira se :target */
 .zoomed:target {
     display: flex;
 }
 
-/* Stil za X dugme za zatvaranje */
 .close {
     position: absolute;
     top: 20px;
@@ -129,4 +141,14 @@ a.image-popup-vertical-fit {
   color: darkblue;
   font-size: 2rem;
   text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }

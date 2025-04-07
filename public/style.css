@@ -1,4 +1,4 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css?family=Abel');
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +6,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
 /* Header */
 header {
@@ -103,7 +102,6 @@ table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Footer */
 footer {
     text-align: center;
     background-color: #333;
@@ -131,44 +129,39 @@ footer {
 }
 
 
-/* Osnovni stilovi za aside */
 aside {
-    width: 100%; /* Puna širina za mobile uređaje */
+    width: 100%; 
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-/* Stil za slike unutar aside */
 aside picture {
     width: 100%;
-    max-width: 600px; /* Maksimalna širina slike za desktop verzije */
+    max-width: 600px;
     display: block;
 }
 
 aside img {
     width: 100%;
     height: auto;
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Dodajemo efekt prijelaza */
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Efekti pri prelasku mišem (hover) */
 aside img:hover {
-    opacity: 0.8; /* Promjena prozirnosti */
-    transform: scale(1.05); /* Lagano uvećanje slike */
+    opacity: 0.8;
+    transform: scale(1.05);
 }
 
-/* Postavke za mobilne uređaje */
 @media (max-width: 767px) {
     aside {
-        order: 2; /* Postavlja aside ispod tablice na mobilnim uređajima */
+        order: 2;
     }
 }
 
-/* Postavke za desktop uređaje */
 @media (min-width: 768px) {
     aside {
-        order: 1; /* Postavlja aside desno od tablice na desktopu */
+        order: 1;
     }
 }
 
